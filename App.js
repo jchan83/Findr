@@ -4,6 +4,7 @@ import Navigation from './components/Navigation/Navigation'
 import Logo from './components/Logo/Logo'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm'
 import Particles from 'react-particles-js';
+import { SearchResults, } from './components/SearchResults/SearchResults';
 
 
 const particlesSpecs = {
@@ -77,9 +78,10 @@ class App extends Component {
         <div className= "pa5">
         <button onClick={this.getLocation}>Get coordinates</button>
         <h4>coordinates</h4>
-        <p>Lat: {this.state.latitude}</p>
+        <p>Lat: {this.state.latitude} </p>
         <p>Long: {this.state.longitude}</p>
         </div>
+        <SearchResults/>
         {/*
           this.state.latitude && this.state.longitude ?
           <img src={`https://maps.googleapis.com/maps/api/staticmap?center=${this.state.latitude},${this.state.longitude}&zoom=14&size=400x300&sensor=false&markers=color:red%7C${this.state.latitude},${this.state.longitude}&keys=${AIzaSyCaLNtB5M0s_ptEGjm7db74uUcPmKDciyw}`} alt='' />

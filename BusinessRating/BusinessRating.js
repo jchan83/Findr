@@ -3,14 +3,14 @@ import './BusinessRating.css'
 import Rating from 'react-rating';
 
 
-export function BusinessRating() {
-    return (
+export function BusinessRating(props) {
+     return (
         <div className='rating'>
         <Rating className ='pl5'   
-         initialRating={3}
+         initialRating={props.rating}
         />
 
-        <p> 100 Reviews </p>
+        <p> {props.reviewCount} </p>
         </div>
     )
 }

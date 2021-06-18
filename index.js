@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App2 from './App2';
 import 'tachyons';
+import { BrowserRouter } from 'react-router-dom';
 //import 'bulma/css/bulma.css'
 
 
 ReactDOM.render(
-    <App />,
+  <BrowserRouter>
+    <App2 />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

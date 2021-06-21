@@ -1,8 +1,9 @@
 import React from 'react';
 import SearchResults from '../components/SearchResults/SearchResults'
-import {Link} from 'react-router-dom'
 import { useBusinessSearch } from '../hooks/useBusinessSearch';
 import useReactRouter from 'use-react-router';
+import SearchResultSummary from '../components/SearchResults/SearchResultSummary/SeachResultSummary';
+import SearchAgainBar from '../components/SearchBar/SearchAgainBar';
 
 export function Search() {
     const {location} = useReactRouter();
@@ -15,10 +16,16 @@ export function Search() {
 
 
     return (
-        <div>
-        <div>
-            <Link to ='/'><h1>Click me</h1> </Link>
-        </div>
+        <div>   
+            <div>
+                <SearchAgainBar /> 
+                <div className = 'pa3'>
+                    <h3 className =' center white font'> All Results: </h3>
+                    <SearchResultSummary 
+                        amountResults={amountResults}
+                        shownResults={businesses ? businesses.length : 0}/>
+                </div>
+            </div>
             <SearchResults businesses={businesses}/>
         </div>
     )

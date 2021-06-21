@@ -15,5 +15,10 @@
 
 .business-info {
     min-width: 400px;
+    max-width: 400px;
 }
 
+.font {
+    font-weight: 900;
+    font-family: 'Yusei Magic', sans-serif;
+}

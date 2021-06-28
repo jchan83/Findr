@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+
 
 const SearchBar = (props) => {
     
@@ -15,29 +17,32 @@ const SearchBar = (props) => {
     };
 
     
+
     return(
-        <form  onSubmit={Submit}>
+        <form class="container-fluid " onSubmit={Submit}>
             
-            <div className='center'>
-                <div className='form center pa4 br3 shadow-5'>
-                    <input className='f4 pa2 w-70 center' type='text' onChange={(e) => setTerm(e.target.value)}/>
-                    <button className='font w-30 f4 link ph3 pv2 dib black bg-light-purple'
+            <div class='row pl5 pr5'>
+                <div className='form ma2 center pa1 br-3 shadow-5 text-truncate'>
+                    <input className='f4 w-70 center' type='text' onChange={(e) => setTerm(e.target.value)}/>
+                    <button className='font tc w-30  ph3 black bg-light-purple'
                      disabled={true} >Search </button>
                 </div>  
             </div>
 
-            <div className='center pt4'>
-                <div className='form center pa4 br3 shadow-5'>
-                    <input className='f4 pa2 w-70 center' type='text' onChange={(e) => setLocation(e.target.value)}/>
-                    <button className= 'font w-30 f4 link ph3 pv2 dib black bg-light-purple'
+            <div className='row pl5 pr5 pt4'>
+                <div className='form ma2 center pa1 br-3 shadow-5 text-truncate'>
+                    <input className='f4 w-70 center' type='text' onChange={(e) => setLocation(e.target.value)}/>
+                    <button className= 'font  tc w-30 ph3 buttonSize black bg-light-purple'
                      disabled={true} >Location </button>
                 </div>  
             </div>
             
-            <div className='center pa4 br3'>
-                <button className='font w-30 grow glow f4 link ph3 pv2 dib black bg-light-purple br-pill'
-                onClick={ Submit}>Find</button>
+            <div class='row pr6 pl6 pt4'>
+                <button className='font grow glow link black bg-light-purple br-pill text-truncate'
+                onClick={ Submit}>Find 
+                </button>
             </div>
+        {/*{fix w jeb}*/}
         </form>
     )
 }

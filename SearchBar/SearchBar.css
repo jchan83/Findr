@@ -1,13 +1,7 @@
 .form {
-    width: 700px;
+    width: 60vw;
+    font-size: 2vh;
     background-color:black;
-background-image:
-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 .font {
@@ -23,8 +17,82 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 
 .searchButton {
     flex: 1;
-    height: 40px;
+    height: 23px;
     min-width: 3vh;
   
 }
 
+/* .findButton{
+    width: 20vh;
+    font-size: 2vh;
+} */
+
+/* .textResponsive {
+    font-size: 100px;
+} */
+
+
+/* @media (max-width: 320px) {
+    .form {
+        display: block;
+        font-size: 10px;
+        width: 60vw ;
+        background-color: black;
+    }
+    
+    .findButton {
+        width: 20vh;
+    }
+
+   
+    .buttonSize{
+        background-color: black;
+        
+    }
+
+    .searchAgainBarPosition{
+        flex-direction: column;
+        margin-right: 150px;
+        
+    }
+
+    .searchAgainBarform{
+        width: 50vw;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .form {
+        background-color:black;
+        font-size: 2vh;
+        width: 40vh ;
+    }
+    
+    .findButton {
+        width: 20vh;
+    }
+
+    /* .textResponsive {
+        font-size: 20px;
+    } */
+
+    
+
+
+        /* @media (min-width: 768px) and (max-width: 992px) {
+
+        .searchAgainBarPosition{
+            flex-direction: column;
+            margin-right: 450px;
+            
+        }
+
+        .searchInputPosition {
+            margin-right: 10px;
+        }
+
+        .spanSize {
+            width: 20vh;
+        }
+    } /*} */

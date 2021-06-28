@@ -21,33 +21,25 @@ const SearchAgainBar = (props) => {
     
     
     return(
-       
-            <div className='flex-row'>
 
-                <form className ='flex' onSubmit={Submit}>
+                <form class="flex pb-5"  onSubmit={Submit}>
 
-                    <div className= 'flex searchAgainBarform grow pointer pl5 center pa4 br3 shadow-5 '>
-                        <span className='font tc w-20 f4 ph2 pv2 black bg-light-purple'
-                         >Search</span>
-                        <input className='f4 w-70 pointer' type='text' onChange={(e) => setTerm(e.target.value)}/> 
+                    <div class="col center pointer "   >
+                        <span class='border border-3 border-warning font pr1 pl2 pt2 black gold'
+                         >Search
+                          </span>
+                        <input class='border border-3 border-warning form-control pointer w-25'  type='text' onChange={(e) => setTerm(e.target.value)}/>  
+                        <span class='border border-3 border-warning font pr1 pl1 pt2 black gold '
+                         >Location
+                        </span>
+                        <input class= 'border border-3 border-warning form-control pointer w-25' type='text' onChange={(e) => setLocation(e.target.value)}/>
+                        <button class = 'col-auto grow pointer font btn gold btn-outline-warning ' type="submit"
+                            onClick={ Submit}> Find
+                        </button>     
                     </div>  
                 
-                    <div className= 'flex searchAgainBarform center grow pointer pa4 br3 shadow-5'>
-
-                        <span className= 'font w-20 tc f4 ph3 pv2 dib black bg-light-purple '
-                         >Location </span>
-
-                        <input className= 'f4 pa2 w-70 center pointer' type='text' onChange={(e) => setLocation(e.target.value)}/>
-
-                        <button className= 'font f4 ph3 pointer'
-                        onClick={ Submit}> <img className = 'mw-100 searchButton' src={searchIcon}></img> </button> 
-
-                    </div>    
                 </form>
-            </div>
-            
-        
-        
+
     )
 }
 

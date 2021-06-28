@@ -1,10 +1,11 @@
 import React from 'react';
 import './../../App.css';
 import Navigation from '../Navigation/Navigation'
-import Logo from '../Logo/Logo';
 import SearchBar from '../SearchBar/SearchBar';
-import { SearchResults, } from '../SearchResults/SearchResults'
 import useReactRouter from 'use-react-router';
+import '../SearchBar/SearchBar.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import Hero from '../Hero/Hero'
 
 const LandingPage = () => {
         
@@ -18,14 +19,16 @@ const LandingPage = () => {
         }
 
     return (
-        <div className="App">,
+        <div class="App">,
         <Navigation/>
-            <Logo/>
-            <SearchBar search ={search} />
-            
+        <Hero/>
+        <SearchBar search ={search} /> 
         </div>
     );
 }
 
 
 export default LandingPage
+
+
+// <Logo/>

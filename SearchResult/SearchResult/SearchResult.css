@@ -1,24 +1,117 @@
-.search-result{
-    display:flex;
-    max-width: 1100px;
-    width: 100%;
-}
 
 
 .business-image {
-    width: 210px;
-    height: 210px;
+    width: 410px;
+    height: 310px;
     border-radius: 4px;
-    margin-right: 3rem;
-
 }
 
 .business-info {
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 300px;
+    max-width: 300px;
 }
 
 .font {
     font-weight: 900;
     font-family: 'Yusei Magic', sans-serif;
+    font-size: 21.5px;
+}
+
+/*=====Card CSS ====*/
+
+.variety {
+    padding-bottom: 40px;
+}
+
+.variety .card {
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+    background: transparent;
+}
+
+.variety .card-img {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+    
+  
+
+}
+
+.variety .card-img img{
+    transition: all 0.3s ease-in-out;
+    width: 40vw;
+    height: 40vw;
+    object-fit: cover;
+}
+
+
+.variety .card-body {
+    z-index: 10;
+    background: #ff9b04a6;
+    border-top:4px solid #f08902;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(241, 159, 5, 0.5);
+    margin-top: -60px;
+    transition: 0.3s;
+    width: 40vw;
+    
+}
+
+.variety .card-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+.variety .card-title a{
+    color: #000;
+    transition: 0.3s;
+}
+
+.variety .read-more a{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.variety .read-more a:hover {
+    color: #854101
+
+}
+
+.variety .card:hover img{
+    transform: scale(1.1);
+}
+
+
+
+.variety .card:hover .card-body{
+    border-color: #fdc134;
+}
+
+
+
+.variety .card:hover .card-body .card-title a{
+    color: #854101;
+}
+
+
+
+
+@media (max-width: 350px){
+
+    .textFlex {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }

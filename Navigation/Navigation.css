@@ -1,0 +1,80 @@
+.cover {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    background: #e79702;
+}
+
+
+.phone{
+    z-index: 1;
+    font-weight: 200;
+}
+
+.phone i{
+    color: #000;
+}
+
+.phone a{
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.reg {
+    width: 50%;
+    text-align: right;
+}
+
+.reg a{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 50%;
+}
+
+.social-icon p a {
+    height: 30px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-icon p {
+    display: block;
+    width: 100%;
+}
+
+.social-icon p a i {
+    font-size: 23px;
+    color: #000;
+}
+
+.social-icon p a:hover {
+    background: #f8aa02;
+    border-color: #f8aa02;
+    
+}
+
+.social-icon p a:hover i{
+    color:white;
+}
+
+
+.bg-color {
+    background-color: black;
+}
+
+.navbar-brand {
+    color:#f8aa02;
+    font-weight: bold;
+    font-size: 35px !important;
+}
+
+
+
+

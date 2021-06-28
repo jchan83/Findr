@@ -1,9 +1,11 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 50px;
+  position: relative;
+  padding: 0px;
   font-family: sans-serif;
   background: rgb(20, 18, 20);
-  background: linear-gradient(90deg, rgb(18, 17, 19) 11%, rgba(23,168,110,1) 44%, rgb(19, 20, 20) 100%);
+  background: linear-gradient(90deg, rgb(212, 131, 8) 11%, rgb(15, 15, 15) 44%, rgb(216, 134, 11) 100%);
 }
+
 
 

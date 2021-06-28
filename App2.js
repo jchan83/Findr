@@ -3,7 +3,6 @@ import App from './App';
 import { Route, Switch } from 'react-router';
 import {Search} from './Search/Search'
 
-
 function App2() {
     
     return(

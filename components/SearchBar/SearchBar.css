@@ -1,0 +1,58 @@
+
+.font {
+    font-weight: 900;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.searchAgainBarform {
+    flex:1;
+    max-width: 40vw;
+    min-width: none;
+}
+
+.background {
+    background-color: #e79702 !important;
+    color: black !important;
+}
+
+#form .col .input {
+    max-width: 25vw;
+    border-top:4px solid #f08902;
+    border-bottom:4px solid #f08902;
+    border-right:4px solid #f08902;
+}
+
+#form .col .span {
+    border-top:4px solid #f08902;
+    border-bottom:4px solid #f08902;
+    border-left:4px solid #f08902;
+    
+
+}
+
+#button {
+    max-width: 10vw;
+
+}
+
+@media (max-width: 576px) {
+    #form .col{
+        flex-direction:column ;
+        padding-left: 20px;
+    }
+
+    #form .col .span {
+        max-width: 50vw;
+        margin: 0%;
+    }
+
+    #form .col .input {
+        max-width: 50vw;
+        margin-bottom: 20px;
+        
+    }
+
+    #form .col .findBtn {
+        max-width: 50px;
+    }
+}

@@ -22,17 +22,17 @@ const SearchBar = (props) => {
         <form class="container-fluid " onSubmit={Submit}>
             
             <div class='row pl5 pr5'>
-                <div className='form w-70 ma2 center pa1 br-3 shadow-5 text-truncate'>
-                    <input className='f4 w-70 center' type='text' onChange={(e) => setTerm(e.target.value)}/>
-                    <button className='font tc w-30  ph3 black background'
+                <div className='form w-70 ma2 center pa1 br-3 text-truncate' id="searchButton">
+                    <input className='f4 w-70 center ' type='text' onChange={(e) => setTerm(e.target.value)}/>
+                    <button className='font  w-30  ph3 black background'
                      disabled={true} >Search </button>
                 </div>  
             </div>
 
             <div className='row pl5 pr5 pt4'>
-                <div className='form w-70 ma2 center pa1 br-3 shadow-5 text-truncate'>
+                <div className='form w-70 ma2 center pa1 br-3 text-truncate' id="searchButton">
                     <input className='f4 w-70 center' type='text' onChange={(e) => setLocation(e.target.value)}/>
-                    <button className= 'font  tc w-30 ph3 buttonSize black background'
+                    <button className= 'font  w-30 ph3 buttonSize black background'
                      disabled={true} >Location </button>
                 </div>  
             </div>

@@ -1,10 +1,10 @@
 import {useState, useEffect} from 'react';
 import * as api from './yelp -api/api'
 
-export function useBusinessSearch(term, latitude, longitude) {
+export function useBusinessSearch(term, location) {
     const [businesses, setBusinesses] = useState([]);
     const [amountResults, setAmountResults] = useState();
-    const [searchParams, setSearchParams] = useState({term, latitude, longitude});
+    const [searchParams, setSearchParams] = useState({term, location}); //this is what the actual web will search
 
     useEffect(() => {
         setBusinesses([]);

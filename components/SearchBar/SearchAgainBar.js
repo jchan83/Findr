@@ -23,20 +23,18 @@ const SearchAgainBar = (props) => {
     return(
 
       <form class= "pb-5"  id="form" onSubmit={Submit}>
-          <div class="col center">
-             <span class='font span pr1 pl2 pt2 background'
-                >Search
-             </span>
-             <input class='form-control input pointer'  type='text' onChange={(e) => setTerm(e.target.value)}/>  
+          <div class="col center ">
+           
+             <input class='form-control input pointer mr4' placeholder="Search"  type='text' onChange={(e) => setTerm(e.target.value)}/>  
 
-             <span class='ml5 font span pr1 pl1 pt2 background'
-                 >Location
-             </span>
-             <input class= 'form-control input pointer' type='text' onChange={(e) => setLocation(e.target.value)}/>
-             <button class = 'ml3 grow pointer findBtn font btn background btn-outline-warning ' type="submit"
+            
+             <input class= 'form-control input pointer ' placeholder="Location" type='text' onChange={(e) => setLocation(e.target.value)}/>
+
+             <button class = 'grow pointer findBtn font btn background btn-outline-warning ' type="submit"
                 onClick={ Submit}> Find
-             </button>     
-           </div>               
+            </button>  
+           </div>   
+           
       </form>
     )
 }

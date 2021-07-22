@@ -52,18 +52,20 @@ const Navigation = () => {
                         <i class ="fa fa-cutlery fa-2x"></i>
                         <i class="fa fa-glass fa-2x ml3"></i>
                     </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="myNav" aria-controls="nav" aria-expanded="false"
-                    aria-label='Toggle navigation'>
+                    
+                    <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse"
+                        data-bs-target="#myNav" 
+                        aria-controls="myNav" aria-expanded="false" aria-label='Toggle navigation'>
                     <i class="fas fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id= "myNav" >
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">About Us</a>
+                                <a href="#" class="font nav-link">About Us</a>
                             </li>
                             <li class="nav-item">   
-                                <a href="#" class="nav-link">Donate</a>
+                                <a href="#" class="font nav-link">Donate</a>
                             </li>
                         </ul>
                     </div>
